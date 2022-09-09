@@ -43,13 +43,13 @@ Se comprobaron los test una vez más con el código `php artisan test` y se evid
 ![](https://github.com/AlejaMorales19/Test-Laravel/blob/master/img/imagen3.png?raw=true)
 
 
-Posterior a esto, se crea la función test_delete_user para que se puedan eliminar usuarios correctamente y se verifico que todos los test estuvieran correctamente.
-Primero comprobamos las rutas disponibles en nuestro proyecto con `php artisan route:list` es de notar que en web.php de nuestros routes, estas rutas se están llamando con la palabra reservada Auth y una vez comprobado esto se hace la función para guardar un nuevo usuario con la función llamada `test_guarda_nuevo_user`.
+Posterior a esto, se creo la función test_delete_user para que se puedieran eliminar usuarios correctamente y se verifico que todos los test estuvieran correctamente.
+Primero comprobamos las rutas disponibles en nuestro proyecto con `php artisan route:list` , estas rutas se están llamando con la palabra reservada Auth y una vez comprobado esto se hizo la función para guardar un nuevo usuario con la función llamada `test_guarda_nuevo_user`.
 
-Posteriormente para lograr que no se duplique ni el nombre ni el email, se añaden los dos campos en la variable $this y el código quedaría asi:
+Posteriormente para lograr que no se duplicara ni el nombre ni el email, en la funcion `test_user_duplication` se añadieron los dos campos en la variable $this y la linea de  código quedo asi:
 `$this->assertTrue($user1->name != $user2->name && $user1->email  != $user2->email);`
 
-Luego se creó una función llamada `test_logueo_user` para testear el correcto logueo y re direccionamiento de cualquier usuario. El cual solo validara el email y la contraseña y Se comprueba la correcta creación con el código `php artisan test `.
+Se creó una función llamada `test_logueo_user` para testear el correcto logueo y re direccionamiento de cualquier usuario. El cual solo validara el email y la contraseña y Se compruebo la correcta creación de los test  con el código `php artisan test `.
 
 
  
